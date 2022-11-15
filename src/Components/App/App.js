@@ -11,7 +11,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      playListName: "",
+      playListName: "New PLaylist",
       playListTracks: [],
       searchResults : []
           
@@ -76,7 +76,7 @@ savePlaylist(){
   Spotify.savePlaylist(this.state.playListName ,trackURIs)
   .then(() => {
   this.setState({
-    playListName: "New playlist",
+    playListName: "New Playlist",
     playListTracks: []
     })
   })
